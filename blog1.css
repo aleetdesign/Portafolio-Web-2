@@ -1,0 +1,241 @@
+/* STYLES BLOG */
+
+.portada1{
+    
+    height: 534px;
+}
+.portada1 img{
+    background-repeat: no-repeat;
+    height: 380px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+.texto1{
+    height: 534px;
+}
+.texto1 p{
+    align-items: center;
+    justify-content: center;
+    
+}
+.portada2{
+    height: 534px;
+}
+.portada2 img{
+    background-repeat: no-repeat;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+.texto2{
+    height: 534px;
+    
+}
+.texto2 p{
+    align-items: center;
+    justify-content: center;
+    
+}
+.portada3{
+    height: 534px;
+}
+.portada3 img{
+    background-repeat: no-repeat;
+    height: 460px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+.texto3{
+    height: 534px;
+}
+.texto3 p{
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+.portada4{
+    height: 534px;
+}
+.portada4 img{
+    background-repeat: no-repeat;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+.texto4{
+    height: 534px;
+}
+.texto4 p{
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+.portada5{
+    height: 534px;
+}
+.portada5 img{
+    background-repeat: no-repeat;
+    height: 380px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+.texto5{
+    height: 534px;
+}
+.texto5 p{
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+@media(max-width: 768px){
+    .portada1 img{
+        width: 770px;
+    }
+    .texto1{
+        height: 180px;
+        
+    }
+    .texto1 p{
+        margin-top: -25px;
+        align-items: center;
+    }
+    .portada1{
+        height: 440px;
+    }
+
+    .portada2 img{
+        width: 770px;
+    }
+    .texto2{
+        height: 180px;
+        
+    }
+    .texto2 p{
+        margin-top: -25px;
+    }
+    .portada2{
+        height: 440px;
+    }
+}
+
+/* ayuda IA */
+
+
+/* Estilos generales para las portadas y textos */
+.portada1,
+.portada2,
+.portada3,
+.portada4,
+.portada5 {
+    height: 534px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portada1 img,
+.portada2 img,
+.portada3 img,
+.portada4 img,
+.portada5 img {
+    width: 100%;
+    height: auto;
+    max-height: 450px; /* Limita la altura máxima para mantener proporciones */
+}
+
+.texto1,
+.texto2,
+.texto3,
+.texto4,
+.texto5 {
+    height: 534px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Añadido para separación */
+}
+
+.texto1 p,
+.texto2 p,
+.texto3 p,
+.texto4 p,
+.texto5 p {
+    text-align: center; /* Centrar el texto */
+}
+
+/* Media Query para tablets y pantallas más pequeñas */
+@media (max-width: 768px) {
+    .portada1 img,
+    .portada2 img,
+    .portada3 img,
+    .portada4 img,
+    .portada5 img {
+        width: 100%;
+        height: auto;
+        max-height: 300px; /* Ajusta la altura máxima para tabletas */
+    }
+
+    .texto1,
+    .texto2,
+    .texto3,
+    .texto4,
+    .texto5 {
+        height: auto; /* Deja que la altura se ajuste automáticamente */
+        padding: 10px; /* Reduce el padding */
+    }
+
+    .texto1 p,
+    .texto2 p,
+    .texto3 p,
+    .texto4 p,
+    .texto5 p {
+        margin-top: 0;
+        font-size: 0.9rem; /* Ajusta el tamaño del texto */
+    }
+
+    /* Mueve las cajas de texto debajo de las imágenes */
+    .row > .col-12 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portada1,
+    .portada2,
+    .portada3,
+    .portada4,
+    .portada5 {
+        order: 1; /* Orden de las imágenes para que se mantengan arriba */
+    }
+
+    .texto1,
+    .texto2,
+    .texto3,
+    .texto4,
+    .texto5 {
+        order: 2; /* Orden de las cajas de texto para que estén abajo */
+    }
+}
+
+/* Media Query para pantallas más pequeñas, como teléfonos */
+@media (max-width: 576px) {
+    .logo {
+        width: 80px; /* Ajusta el tamaño del logo si es necesario */
+    }
+
+    .imginicio {
+        width: 100%;
+    }
+
+    .texto1 p,
+    .texto2 p,
+    .texto3 p,
+    .texto4 p,
+    .texto5 p {
+        font-size: 0.8rem; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    }
+}

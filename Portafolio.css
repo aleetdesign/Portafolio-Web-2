@@ -1,0 +1,253 @@
+/* STYLES PORTAFOLIO */
+.portafolio{
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+   
+    color: #E4D65A;
+    font-family: monserat;
+    font-weight: 750;
+    
+}
+.portafolio p{
+    color: #E4D65A;
+}
+.fondo1{
+    background-color: #1E1E1E;
+    height: auto;
+}
+.identidaddemarca{
+    background-color: #A46EA6;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    padding: 140px 50px;
+    margin: 20px;
+    
+}
+.identidaddemarca a{
+    text-decoration: none;
+    color: #F1C1DB;
+    text-transform: uppercase;
+    font-size: medium;
+    width: 200px;
+    font-weight: 600;
+}
+.ilustración{
+    background-color: #A46EA6;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    padding: 140px 50px;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.ilustración a{
+    text-decoration: none;
+    color: #F1C1DB;
+    text-transform: uppercase;
+    font-size: medium;
+    width: 200px;
+    font-weight: 600;
+}
+.fotografía{
+    background-color: #A46EA6;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    padding: 140px 50px;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.fotografía a{
+    text-decoration: none;
+    color: #F1C1DB;
+    text-transform: uppercase;
+    font-size: medium;
+    width: 200px;
+    font-weight: 600;
+}
+.personaje{
+    background-color: #A46EA6;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    padding: 140px 50px;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3%;
+}
+.personaje a{
+    text-decoration: none;
+    color: #F1C1DB;
+    text-transform: uppercase;
+    font-size: medium;
+    width: 200px;
+    font-weight: 600;
+}
+.pie,
+.pie1{
+    margin-top: 0px;
+    
+}
+
+/* hamburguesa */
+.header{
+    height: 100px;
+    background: #1E1E1E;
+    padding: 0 50px;
+    color: white; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.logo{
+    text-transform: uppercase;
+    color: white;
+    height: 80px;
+}
+.logo,a:hover{
+    color: #432F72;
+}
+.menu{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+.menu a{
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.mostrar-menu{
+    order: 1;
+}
+.menu a:hover,
+.mostrar-menu,
+.esconder-menu{
+    color:#432F72;
+}
+#check{
+    display: none;
+}
+
+@media(max-width: 768px){
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #E4D65A;
+        right: -100%;
+        top: 0%;
+        text-align: center;
+        padding: 100px 0;
+        z-index: 100px;
+        transition: 0.8s;
+    }
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+}
+@font-face {
+    font-family: monserat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+
+/* ayuda IA responsive tablet de las cajas */
+.fondo1 {
+    padding: 20px;
+    text-align: center;
+}
+
+.portafolio {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    
+}
+
+.portafolio p {
+    margin: 0;
+}
+
+/* Estilos para los elementos dentro de la sección */
+.identidaddemarca,
+.ilustración,
+.fotografía,
+.personaje {
+    background-color: #A46EA6; /* Color de fondo para visibilidad */
+    border: 1px solid #432F72; /* Borde para los elementos */
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    
+    
+}
+
+.identidaddemarca a,
+.ilustración a,
+.fotografía a,
+.personaje a {
+    text-decoration: none;
+    color: #F1C1DB;
+   
+}
+
+.identidaddemarca:hover,
+.ilustración:hover,
+.fotografía:hover,
+.personaje:hover {
+    background-color:#332a47;
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+}
+
+/* Media Query para tabletas */
+@media (max-width: 768px) {
+    .row.d-flex {
+        flex-direction: column; /* Alinea los elementos en columna en lugar de fila */
+    }
+
+    .identidaddemarca,
+    .ilustración,
+    .fotografía {
+        width: 100%; /* Asegura que los elementos ocupen el 100% del ancho */
+        margin: 10px 0; /* Margen vertical entre elementos */
+    }
+    
+    .portafolio {
+        font-size: 1.5rem; /* Reduce el tamaño de fuente en pantallas más pequeñas */
+    }
+    
+    .portafolio p {
+        font-size: 1.2rem; /* Ajusta el tamaño de fuente del párrafo */
+    }
+}

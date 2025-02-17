@@ -1,0 +1,63 @@
+.identidad-de-marca{
+    height: 130px;
+        text-transform: uppercase;
+        font-size: 50px;
+        text-align: center;
+       
+        color: #E4D65A;
+        font-family: monserat;
+        font-weight: 750;
+    
+}
+.imagen1{
+    height: 349px;
+}
+.imagen1:hover{
+    animation-iteration-count: infinite;
+}
+.imagen1 img{
+    width: 350px;
+    height: 250px;
+}
+.imagen2{
+    height: 349px;
+}
+.imagen2:hover{
+    animation-iteration-count: infinite;
+}
+.imagen2 img{
+    width: 350px;
+    height: 250px;
+}
+.imagen3{
+    height: 349px;
+}
+.imagen3:hover{
+    animation-iteration-count: infinite;
+}
+.imagen3 img{
+    width: 350px;
+    height: 250px;
+}
+.imagen4{
+    height: 349px;
+}
+.imagen4:hover{
+    animation-iteration-count: infinite;
+}
+.imagen4 img{
+    width: 350px;
+    height: 250px;
+}
+
+.identidad-de-marca {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding-top: 7%;
+    
+}
+
+.identidad-de-marca p {
+    margin: 0;
+}
+
